@@ -6,7 +6,7 @@
   <link href="https://yaoleistable.github.io/atom.xml" rel="self"/>
   
   <link href="https://yaoleistable.github.io/"/>
-  <updated>2024-03-24T12:02:32.212Z</updated>
+  <updated>2024-03-24T12:59:46.932Z</updated>
   <id>https://yaoleistable.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>个人博客如何更为高效的使用</title>
+    <link href="https://yaoleistable.github.io/2024/03/24/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E6%9B%B4%E4%B8%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BD%BF%E7%94%A8-1/"/>
+    <id>https://yaoleistable.github.io/2024/03/24/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E6%9B%B4%E4%B8%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BD%BF%E7%94%A8-1/</id>
+    <published>2024-03-24T12:58:00.000Z</published>
+    <updated>2024-03-24T12:59:46.932Z</updated>
+    
+    <content type="html"><![CDATA[<p>思考如何更为高效的部署使用静态博客。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;思考如何更为高效的部署使用静态博客。&lt;/p&gt;
+</summary>
+      
+    
+    
+    
+    <category term="灵感笔记" scheme="https://yaoleistable.github.io/categories/%E7%81%B5%E6%84%9F%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="灵感" scheme="https://yaoleistable.github.io/tags/%E7%81%B5%E6%84%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>使用 Hexo+GitHub 搭建个人免费博客教程</title>

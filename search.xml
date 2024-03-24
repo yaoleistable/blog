@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>个人博客如何更为高效的使用</title>
+    <url>/2024/03/24/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%A6%82%E4%BD%95%E6%9B%B4%E4%B8%BA%E9%AB%98%E6%95%88%E7%9A%84%E4%BD%BF%E7%94%A8-1/</url>
+    <content><![CDATA[<p>思考如何更为高效的部署使用静态博客。</p>
+]]></content>
+      <categories>
+        <category>灵感笔记</category>
+      </categories>
+      <tags>
+        <tag>灵感</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>使用 Hexo+GitHub 搭建个人免费博客教程</title>
     <url>/2024/03/24/%E7%BE%A4%E6%99%96%E4%B8%AD%E4%BD%BF%E7%94%A8%20Hexo+GitHub%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/</url>
     <content><![CDATA[<h1 id="1-Hexo博客搭建"><a href="#1-Hexo博客搭建" class="headerlink" title="1 Hexo博客搭建"></a>1 Hexo博客搭建</h1><h2 id="1-1-Docker部署hexo"><a href="#1-1-Docker部署hexo" class="headerlink" title="1.1 Docker部署hexo"></a>1.1 Docker部署hexo</h2><figure class="highlight plaintext"><table><tbody><tr><td class="code"><pre><span class="line">docker create --name=hexo \</span><br><span class="line">-e HEXO_SERVER_PORT=4000 \</span><br><span class="line">-e GIT_USER="youname" \</span><br><span class="line">-e GIT_EMAIL="email@qq.com" \</span><br><span class="line">-v /volume1/docker/hexo/myblog:/app \</span><br><span class="line">-p 4000:4000 \</span><br><span class="line">bloodstar/hexo</span><br></pre></td></tr></tbody></table></figure>
