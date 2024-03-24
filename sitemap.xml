@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://taborblog.github.io/2024/03/24/2024-03-24-blog/</loc>
+    <loc>https://yaoleistable.github.io/2024/03/24/%E7%BE%A4%E6%99%96%E4%B8%AD%E4%BD%BF%E7%94%A8%20Hexo+GitHub%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/</loc>
     
     <lastmod>2024-03-24</lastmod>
     
@@ -11,18 +11,9 @@
   </url>
   
   <url>
-    <loc>https://taborblog.github.io/404/index.html</loc>
+    <loc>https://yaoleistable.github.io/404/index.html</loc>
     
     <lastmod>2024-03-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://taborblog.github.io/2024/03/23/hello-world/</loc>
-    
-    <lastmod>2024-03-23</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -30,7 +21,7 @@
   
 
   <url>
-    <loc>https://taborblog.github.io/</loc>
+    <loc>https://yaoleistable.github.io/</loc>
     <lastmod>2024-03-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>

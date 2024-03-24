@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Tabor&#39;sBlog</title>
+  <title>Tabor&#39;s Blog</title>
   
+  <subtitle>���дд�������¼</subtitle>
+  <link href="https://yaoleistable.github.io/atom.xml" rel="self"/>
   
-  <link href="https://taborblog.github.io/atom.xml" rel="self"/>
-  
-  <link href="https://taborblog.github.io/"/>
-  <updated>2024-03-24T02:44:26.343Z</updated>
-  <id>https://taborblog.github.io/</id>
+  <link href="https://yaoleistable.github.io/"/>
+  <updated>2024-03-24T12:02:32.212Z</updated>
+  <id>https://yaoleistable.github.io/</id>
   
   <author>
     <name>Tabor</name>
@@ -17,31 +17,18 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2024-03-24-blog</title>
-    <link href="https://taborblog.github.io/2024/03/24/2024-03-24-blog/"/>
-    <id>https://taborblog.github.io/2024/03/24/2024-03-24-blog/</id>
-    <published>2024-03-24T02:44:26.000Z</published>
-    <updated>2024-03-24T02:44:26.343Z</updated>
+    <title>使用 Hexo+GitHub 搭建个人免费博客教程</title>
+    <link href="https://yaoleistable.github.io/2024/03/24/%E7%BE%A4%E6%99%96%E4%B8%AD%E4%BD%BF%E7%94%A8%20Hexo+GitHub%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/"/>
+    <id>https://yaoleistable.github.io/2024/03/24/%E7%BE%A4%E6%99%96%E4%B8%AD%E4%BD%BF%E7%94%A8%20Hexo+GitHub%20%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%85%8D%E8%B4%B9%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/</id>
+    <published>2024-03-24T12:03:00.945Z</published>
+    <updated>2024-03-24T12:02:32.212Z</updated>
     
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://taborblog.github.io/2024/03/23/hello-world/"/>
-    <id>https://taborblog.github.io/2024/03/23/hello-world/</id>
-    <published>2024-03-23T23:32:33.280Z</published>
-    <updated>2024-03-23T23:32:33.280Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="1-Hexo博客搭建"><a href="#1-Hexo博客搭建" class="headerlink" title="1 Hexo博客搭建"></a>1 Hexo博客搭建</h1><h2 id="1-1-Docker部署hexo"><a href="#1-1-Docker部署hexo" class="headerlink" title="1.1 Docker部署hexo"></a>1.1 Docker部署hexo</h2><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">docker create --name=hexo \</span><br><span class="line">-e HEXO_SERVER_PORT=4000 \</span><br><span class="line">-e GIT_USER="youname" \</span><br><span class="line">-e GIT_EMAIL="email@qq.com" \</span><br><span class="line">-v /volume1/docker/hexo/myblog:/app \</span><br><span class="line">-p 4000:4000 \</span><br><span class="line">bloodstar/hexo</span><br></pre></td></tr></tbody></table></figure><h2 id="1-2-ssh-key-部署"><a href="#1-2-ssh-key-部署" class="headerlink" title="1.2 ssh key 部署"></a>1.2 ssh key 部署</h2><p><strong>Docker会自动随机生成ssh key</strong>&nbsp;在 /app/.ssh 目录下面。自动部署请把ssh key添加到github 等平台。</p><p>GitHub，进入&nbsp;<strong>Settings</strong>，选择左边栏的 SSH and GPG keys，点击 New SSH key，Title 随便取，然后把 id_rsa.pub 里面的内容到复制到 Key 中，点击 Add SSH key。<br><img src="https://lei-1258171996.cos.ap-guangzhou.myqcloud.com/imgs/2024/202403240936524.png"><br>保存完毕以后，我们可以在本地验证一下连接。</p><h2 id="1-3-SSH-进入docker"><a href="#1-3-SSH-进入docker" class="headerlink" title="1.3 SSH 进入docker"></a>1.3 SSH 进入docker</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker ps <span class="comment"># 查看hexo的容器编号</span></span><br><span class="line">docker <span class="built_in">exec</span> -it 682e0a19f679 /bin/bash</span><br></pre></td></tr></tbody></table></figure><h2 id="1-4-运行自定义用户自动运行脚本"><a href="#1-4-运行自定义用户自动运行脚本" class="headerlink" title="1.4 运行自定义用户自动运行脚本"></a>1.4 运行自定义用户自动运行脚本</h2><blockquote><p>用户可以在这里添加自动配置，自动安装插件，等各种启动docker运行的命令。<br>它将在Docker启动完成后自动调用运行</p></blockquote><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /app/useRun.sh</span><br></pre></td></tr></tbody></table></figure><h1 id="2-创建-GitHub-仓库"><a href="#2-创建-GitHub-仓库" class="headerlink" title="2 创建 GitHub 仓库"></a>2 创建 GitHub 仓库</h1><p>我们在自己 GitHub 的主页 repository 中点击右上角的 NEW，填写基本信息：</p><ul><li>Repository name 中输入<code>用户名.github.io</code>，一定要是这个名字！</li><li>勾选 Add a README file<br>填好后点击 Create repository 创建仓库。<br>  现在我们访问&nbsp;<code>https://用户名.github.io</code>（<a href="http://yaoleistable.github.io)可以看到默认界面./">http://yaoleistable.github.io）可以看到默认界面。</a></li></ul><h1 id="3-上传-hexo-程序到-GitHub"><a href="#3-上传-hexo-程序到-GitHub" class="headerlink" title="3 上传 hexo 程序到 GitHub"></a>3 上传 hexo 程序到 GitHub</h1><p>修改_config.yml 文件末尾的 Deployment 部分：<br><img src="https://lei-1258171996.cos.ap-guangzhou.myqcloud.com/imgs/2024/202403240952044.png"><br>修改成如下（修改为你的用户名与仓库名）</p><figure class="highlight plaintext"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: git@github.com:yaoleistable/yaoleistable.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></tbody></table></figure><p>其实就是通过 SSH 进行连接，SSH 连接地址可以 直接在仓库&nbsp;<code>&lt;&gt;Code</code>&nbsp;里面看到：<br><img src="https://lei-1258171996.cos.ap-guangzhou.myqcloud.com/imgs/2024/202403241954930.png"></p><h1 id="4-Hexo-日常操作命令"><a href="#4-Hexo-日常操作命令" class="headerlink" title="4 Hexo 日常操作命令"></a>4 Hexo 日常操作命令</h1><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 进入hexo docker 环境。需要你已经安装了docker环境，并安装了上文提到的hexo docker</span></span><br><span class="line">docker <span class="built_in">exec</span> -it 682e0a19f679 /bin/bash</span><br><span class="line"><span class="comment"># 运行完这条命令后，你就发现命令提示符变了，你此时进入了一个独立于你的主机运行环境的新的 node + hexo 开发环境了。</span></span><br><span class="line"><span class="comment"># 生成新页面 404</span></span><br><span class="line">hexo new page 404</span><br><span class="line"><span class="comment"># 新增新文章 2024-03-24-blog</span></span><br><span class="line">hexo new post 2024-03-24-blog</span><br><span class="line"><span class="comment"># 清理上次生成的静态网页，可以不运行，但你修改了一些源码后，很可能有各种不生效或错误</span></span><br><span class="line">hexo clean</span><br><span class="line"><span class="comment"># 生成静态网页</span></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line"><span class="comment"># gulp调用gulpfile.js压缩静态网页相关代码，减小网页体积</span></span><br><span class="line">gulp </span><br><span class="line"></span><br><span class="line"><span class="comment"># 调用根目录中 _config.yml 文件的deploy配置的参数来部署你的静态网页</span></span><br><span class="line">hexo d</span><br></pre></td></tr></tbody></table></figure><h1 id="5-参考文章"><a href="#5-参考文章" class="headerlink" title="5 参考文章"></a>5 参考文章</h1><ul><li><a href="https://tech.yemengstar.com/hexo%e7%b3%bb%e5%88%97%e6%95%99%e7%a8%8b-%e5%9c%a8hexo%e4%b8%8a%e5%8f%91%e5%b8%83%e6%96%87%e7%ab%a0-%e5%b0%8f%e7%99%bd%e5%90%91%e6%95%99%e7%a8%8b/">HEXO系列教程 | 在HEXO上发布文章 | 小白向教程 - 夜梦星尘の折腾日记</a></li><li><a href="https://www.jianshu.com/p/0f7c39826b2f">Docker部署hexo在github搭建博客 - 简书</a></li><li><a href="https://blog.17lai.site/posts/40300608/#SSH-%E8%BF%9B%E5%85%A5docker">[三万字教程]基于Hexo的matery主题搭建博客并深度优化一站式完全教程 | 夜法之书</a></li></ul>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;h1 id=&quot;1-Hexo博客搭建&quot;&gt;&lt;a href=&quot;#1-Hexo博客搭建&quot; class=&quot;headerlink&quot; title=&quot;1 Hexo博客搭建&quot;&gt;&lt;/a&gt;1 Hexo博客搭建&lt;/h1&gt;&lt;h2 id=&quot;1-1-Docker部署hexo&quot;&gt;&lt;a href=&quot;#1-1-D</summary>
       
     
     
